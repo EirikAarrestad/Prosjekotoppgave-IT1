@@ -1,0 +1,257 @@
+html {
+    background-color: white;
+    scroll-behavior: smooth; /*Har denne hvis noen trykker på en href og blir transportert til et sted i nettsiden skjer det på en finere måte*/
+}
+
+body {
+    margin: 0;
+}
+/*alt med #giftImage1 retter seg mot bildet med den id-en*/
+#giftImage1 {
+    padding: 20px;
+    padding-top: 25px;
+    display: block;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+
+/*alt med #giftImage2 retter seg mot bildet med den id-en*/
+#giftImage2 {
+    width: 100%;
+}
+
+/*alt med .container retter seg mot elementer med den klassen container og alt innenfor klassen*/
+.container {
+    color: #d0040c;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    padding: 0;
+}
+
+.container > h1 {
+    font-size: 70px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+    margin: auto;
+    border-bottom: dotted 10px white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*alt med .navbar retter seg mot elementer med den klassen navbar og alt innenfor klassen*/
+.navBar {
+    background-color: #f8f4f4;
+    color: black;
+    height: 75px;
+}
+
+.navBar > .left {
+    display: flex;
+    float: left;
+}
+
+.navBar > .left > p {
+    margin-top: 22.5px;
+    font-size: 22px;
+}
+
+.navBar > .left > p,
+a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+
+.navBar > .right {
+    float: right;
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+#navbarItem1 {
+    margin-left: 15px;
+    border-right: 1px solid black;
+}
+
+#navbarItem1 > a:hover,
+#navbarItem2 > a:hover {
+    color: #d0040c;
+}
+
+#navbarItem2 {
+    margin-left: 10px;
+}
+
+/*denne retter seg mot elementet med id-en #topAnchor */
+#topAnchor {
+    margin: 20px;
+}
+#topAnchor > a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+#topAnchor > a:hover {
+    text-decoration: underline;
+}
+
+/*Dette gjelder helt til footingen*/
+.main_page {
+    text-align: left;
+    width: 100%;
+}
+
+/*Bruker display grid for at vi kan enklere posisjonere teksten og bildet*/
+.paragraph_1 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.rightImage {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+/*bildeteksten*/
+.rightImage > p {
+    float: right;
+    margin: auto;
+    color: gray;
+    font-size: 15px;
+}
+
+/*venstre del av grid*/
+.leftGrid {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    margin-right: 50px;
+}
+
+/*For navbaren på toppen så det ser litt fancy og fint ut*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #d0040c;
+    transform-origin: bottom;
+    transition: 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+/*containeren for der videoen er*/
+.videoContainer {
+    text-align: center;
+}
+
+.videoContainer > iframe {
+    display: block;
+    margin: auto;
+}
+
+.videoContainer > h2 {
+    margin-top: auto;
+    font-size: 30px;
+    color: black;
+}
+
+.leftGrid > h2,
+.paragraph_2 > h2 {
+    margin-top: auto;
+    font-size: 30px;
+    color: black;
+}
+
+.paragraph_2 {
+    color: black;
+    margin-top: 50px;
+}
+
+.paragraph_2 p,
+h2 {
+    margin: 10px;
+}
+
+.paragraph_2 p {
+    font-size: 20px;
+}
+
+/*Footer-containeren begynner her*/
+.wrapper {
+    display: grid;
+    padding: 0;
+    grid-template-columns: auto auto auto auto;
+    height: 170px;
+    background-color: #f8f4f4;
+}
+
+#gridContainer {
+    padding: 50px;
+    font-size: 30px;
+}
+
+#output p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header,
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.header {
+    margin: auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.text {
+    font-size: 20px;
+    margin: auto;
+}
+
+/*Bruker denne istedenfor å bruke <ol> og <li>*/
+.countContainer {
+    counter-reset: heading;
+}
+.counterHeader:before {
+    content: counter(heading) ". ";
+    counter-increment: heading;
+}
+.counterHeader {
+    counter-reset: subheading;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    color: #d0040c;
+}
+
+.countContainer p {
+    margin-top: 0px;
+    font-size: 17px;
+    color: black;
+    margin-left: 32px;
+}
+.countContainer h1 {
+    margin: 5px;
+}
