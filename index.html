@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="nn">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./script.js" defer></script>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" href="./images/christmasICON.png" />
+        <title>Bærekraftig Jul</title>
+    </head>
+    <body>
+        <!--Dette er "navbaren" til nettsiden, der det blir fint vist hvilke paragrafer man kan lese og forfatterne-->
+        <div class="navBar">
+            <!--Venstre side av navbaren-->
+            <div class="left">
+                <p id="navbarItem1">
+                    <a class="hover-underline-animation" href="#hvordan"
+                        >Hvordan feirer man bærekraftig?</a
+                    >
+                </p>
+                <p id="navbarItem2">
+                    <a class="hover-underline-animation" href="#gaver"
+                        >Hvilke gaver kan du gi som er bærekraftige</a
+                    >
+                </p>
+            </div>
+            <!--Høyre side av navbaren-->
+            <div class="right">
+                <p>
+                    Skrevet av:
+                    <span id="author">Eirik og Mohanad</span>
+                </p>
+            </div>
+        </div>
+        <!--Det store bilde på toppen av nettsiden, og er også hovedpunktet på nettsiden-->
+        <main>
+            <img
+                src="./images/topImg.jpg"
+                id="giftImage1"
+                alt="Gaver med lys under juletre"
+            />
+            <!--Her kommer hovedinformasjonen til nettsiden-->
+            <div class="container">
+                <h1>En bærekraftig jul</h1>
+                <br />
+                <div class="main_page">
+                    <!--etter overskriften i headingen kommer de to paragrafene med informasjon-->
+                    <div class="paragraph_1">
+                        <!--Siden jeg bruker display grid kaller jeg klassen "leftGrid" for å lettere forstå hva klassen representere -->
+                        <div class="leftGrid">
+                            <h2 id="hvordan">
+                                Hvordan man kan feire Jul bærekraftig
+                            </h2>
+                            <div class="countContainer">
+                                <h1 class="counterHeader">
+                                    Velg en bærekraftig julegave
+                                </h1>
+                                <p>
+                                    Det å kjøpe brukte gaver er også et godt og
+                                    bærekraftig tips. I tillegg til å være
+                                    billigere, er ofte kvaliteten nesten så god
+                                    som ny. Bøker, service, spill, klær,
+                                    interiør – alt kan kjøpes brukt så lenge
+                                    kvaliteten er god. Vinn, vinn med andre ord.
+                                    Du kan lese mer om hvordan du handler
+                                    julegaver brukt her.
+                                </p>
+                                <h1 class="counterHeader">
+                                    Velg økologiske juletrær
+                                </h1>
+                                <p>
+                                    Mange sverger også til plast-tre. Husk at du
+                                    skal ha det samme juletreet i mange år før
+                                    det er mer miljøvennlig enn vanlig tre.
+                                    Ønsker du plast-tre bør du derfor se etter
+                                    et i god kvalitet som du kan ha mange år
+                                    frem i tid.
+                                </p>
+                                <h1 class="counterHeader">
+                                    Gi en julegave med mening
+                                </h1>
+                                <p>
+                                    Kjøper du gaver til personer som du føler
+                                    har alt de trenger? Det finnes mange ulike
+                                    veldedige organisasjoner som arrangerer
+                                    juleselskap eller bidrar med gaver til
+                                    familier og andre som trenger det.
+                                </p>
+                            </div>
+                        </div>
+                        <!--Bilde på høyre side ved siden av første paragraf-->
+                        <div class="rightImage">
+                            <img
+                                src="./images/giftImage1.jpg"
+                                alt="bilde"
+                                id="giftImage2"
+                            />
+                            <p>
+                                Pakk inn gavene i stoff som du ikke lenger
+                                bruker
+                            </p>
+                            <p>For eksempel en gammel duk</p>
+                        </div>
+                    </div>
+                    <!--Container som representer videoen og teksten over-->
+                    <div class="videoContainer">
+                        <h2>
+                            Videoen under gir tips til en mer bærekraftig
+                            jule-midadg
+                        </h2>
+                        <iframe
+                            src="https://www.youtube.com/embed/7D014gQxXhY"
+                            style="width: 90%; height: 500px"
+                        ></iframe>
+                    </div>
+                    <div class="paragraph_2">
+                        <h2 id="gaver">Gaver du kan gi som er bærekraftige</h2>
+                        <p>
+                            Til å begynne med, det å gi bort julegaver man har
+                            kjøpt brukt kan for mange høres litt rart ut –
+                            kanskje rett å slett litt tabu å snakke om. Det
+                            tabuet bør vi få slutt på. Å kjøpe brukt er bedre
+                            for miljøet, og for lommeboka. Ofte kan det også
+                            ligge mer tanke bak en fin, brukt julegave enn en
+                            helt ny. Synes du brukte gaver er ubehagelig å gi,
+                            kan det jo være en ide å lufte tanken før
+                            julegaveshoppingen starter og se an responsen.
+                        </p>
+                        <div class="countContainer">
+                            <h1 class="counterHeader">Bøker</h1>
+                            <p>
+                                En bok blir ofte lest en gang – også blir den
+                                liggende i hylla. Det er derfor den perfekte
+                                gaven til den leseglade. Hvorfor bruke flere
+                                hundre kroner på å kjøpe en helt ny bok, når du
+                                kan kjøpe den for en femtilapp på nett, eller
+                                kan ta den fra egen bokhylle.
+                            </p>
+                            <h1 class="counterHeader">Gavekort</h1>
+                            <p>
+                                Visste du at Fretex har gavekort? Hvis du ikke
+                                finner en passende gave, kan du kjøpe et
+                                gavekort så mottakeren kan velge gave selv i
+                                stedet. Gavekort får du også på Tise, som er en
+                                annen applikasjon der man kan kjøpe og selge
+                                brukt.
+                            </p>
+                            <h1 class="counterHeader">Lag noe selv</h1>
+                            <p>
+                                Vil du ikke kjøpe brukt, men heller ikke bruke
+                                mye penger kan du lage gavene selv. Gi bort
+                                julekaker og karameller, eller lag noe kreativt
+                                til de du er glad. Det finnes utallige tips på
+                                nett, og du finner noe for enhver smak. Et lite
+                                juleverksted bidrar jo gjerne til å sette
+                                stemningen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Tekst som man trykker på fører deg til toppen av siden-->
+                <p id="topAnchor"><a href="#">til toppen</a></p>
+            </div>
+        </main>
+        <footer>
+            <!--Footer der jeg bruker JS for å ha en kortere HTML kode-->
+            <div class="wrapper"></div>
+        </footer>
+    </body>
+</html>
