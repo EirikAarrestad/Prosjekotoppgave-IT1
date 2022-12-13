@@ -25,7 +25,7 @@ let contactText = "";
 //Lager en "for løkke" for å lage hele grid-containeren med objektes titel og tekst
 for (let i = 0; i < contactInfo.length; i++) {
     contactText +=
-        "<div id='gridContainer'>" +
+        "<div class='gridContainer'>" +
         "<p class='header'>" +
         contactInfo[i].title +
         "</p>" +
