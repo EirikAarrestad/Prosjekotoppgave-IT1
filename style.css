@@ -6,38 +6,6 @@ html {
 body {
     margin: 0;
 }
-/*alt med #giftImage1 retter seg mot bildet med den id-en*/
-#giftImage1 {
-    padding: 20px;
-    padding-top: 25px;
-    display: block;
-    text-align: center;
-    width: 85%;
-    margin: auto;
-}
-
-/*alt med #giftImage2 retter seg mot bildet med den id-en*/
-#giftImage2 {
-    width: 100%;
-}
-
-/*alt med .container retter seg mot elementer med den klassen container og alt innenfor klassen*/
-.container {
-    color: #d0040c;
-    text-align: center;
-    width: 85%;
-    margin: auto;
-    padding: 0;
-}
-
-.container > h1 {
-    font-size: 70px;
-    font-weight: lighter;
-    padding-bottom: 20px;
-    margin: auto;
-    border-bottom: dotted 10px white;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
 
 /*alt med .navbar retter seg mot elementer med den klassen navbar og alt innenfor klassen*/
 .navBar {
@@ -83,56 +51,6 @@ a {
     margin-left: 10px;
 }
 
-/*denne retter seg mot elementet med id-en #topAnchor */
-#topAnchor {
-    margin: 20px;
-}
-#topAnchor > a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 17px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 20px;
-}
-
-#topAnchor > a:hover {
-    text-decoration: underline;
-}
-
-/*Dette gjelder helt til footingen*/
-.main_page {
-    text-align: left;
-    width: 100%;
-}
-
-/*Bruker display grid for at vi kan enklere posisjonere teksten og bildet*/
-.paragraph_1 {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.rightImage {
-    width: 100%;
-    grid-column: 2;
-    grid-row: 1 / span 2;
-}
-
-/*bildeteksten*/
-.rightImage > p {
-    float: right;
-    margin: auto;
-    color: gray;
-    font-size: 15px;
-}
-
-/*venstre del av grid*/
-.leftGrid {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    margin-right: 50px;
-}
-
 /*For navbaren på toppen så det ser litt fancy og fint ut*/
 .hover-underline-animation {
     display: inline-block;
@@ -157,20 +75,51 @@ a {
     transform-origin: center;
 }
 
-/*containeren for der videoen er*/
-.videoContainer {
-    text-align: center;
-}
-
-.videoContainer > iframe {
+/*alt med #giftImage1 retter seg mot bildet med den id-en*/
+#giftImage1 {
+    padding: 20px;
+    padding-top: 25px;
     display: block;
+    text-align: center;
+    width: 85%;
     margin: auto;
 }
 
-.videoContainer > h2 {
-    margin-top: auto;
-    font-size: 30px;
-    color: black;
+/*alt med .container retter seg mot elementer med den klassen container og alt innenfor klassen*/
+.container {
+    color: #d0040c;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    padding: 0;
+}
+
+.container > h1 {
+    font-size: 70px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+    margin: auto;
+    border-bottom: dotted 10px white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*Dette gjelder helt til footingen*/
+.main_page {
+    text-align: left;
+    width: 100%;
+}
+
+/*Bruker display grid for at vi kan enklere posisjonere teksten og bildet*/
+.paragraph_1 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/*venstre del av grid*/
+.leftGrid {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    margin-right: 50px;
 }
 
 .leftGrid > h2,
@@ -178,56 +127,6 @@ a {
     margin-top: auto;
     font-size: 30px;
     color: black;
-}
-
-.paragraph_2 {
-    color: black;
-    margin-top: 50px;
-}
-
-.paragraph_2 p,
-h2 {
-    margin: 10px;
-}
-
-.paragraph_2 p {
-    font-size: 20px;
-}
-
-/*Footer-containeren begynner her*/
-.wrapper {
-    display: grid;
-    padding: 0;
-    grid-template-columns: auto auto auto auto;
-    height: 170px;
-    background-color: #f8f4f4;
-}
-
-#gridContainer {
-    padding: 50px;
-    font-size: 30px;
-}
-
-#output p {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.header,
-.text {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-}
-.header {
-    margin: auto;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.text {
-    font-size: 20px;
-    margin: auto;
 }
 
 /*Bruker denne istedenfor å bruke <ol> og <li>*/
@@ -254,4 +153,106 @@ h2 {
 }
 .countContainer h1 {
     margin: 5px;
+}
+
+.rightImage {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+/*bildeteksten*/
+.rightImage > p {
+    float: right;
+    margin: auto;
+    color: gray;
+    font-size: 15px;
+}
+
+/*alt med #giftImage2 retter seg mot bildet med den id-en*/
+#giftImage2 {
+    width: 100%;
+}
+
+/*containeren for der videoen er*/
+.videoContainer {
+    text-align: center;
+}
+
+.videoContainer > iframe {
+    display: block;
+    margin: auto;
+}
+
+.videoContainer > h2 {
+    margin-top: auto;
+    font-size: 30px;
+    color: black;
+}
+
+.paragraph_2 {
+    color: black;
+    margin-top: 50px;
+}
+
+.paragraph_2 p,
+h2 {
+    margin: 10px;
+}
+
+.paragraph_2 p {
+    font-size: 20px;
+}
+
+/*denne retter seg mot elementet med id-en #topAnchor */
+#topAnchor {
+    margin: 20px;
+}
+#topAnchor > a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+#topAnchor > a:hover {
+    text-decoration: underline;
+}
+
+/*Footer-containeren begynner her*/
+.wrapper {
+    display: grid;
+    padding: 0;
+    grid-template-columns: auto auto auto auto;
+    height: 170px;
+    background-color: #f8f4f4;
+}
+
+.gridContainer {
+    padding: 50px;
+    font-size: 30px;
+}
+
+#output p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header,
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.header {
+    margin: auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.text {
+    font-size: 20px;
+    margin: auto;
 }
